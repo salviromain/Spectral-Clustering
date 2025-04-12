@@ -1,0 +1,30 @@
+Instruction file for the Spectral Clustering homework. 
+Student ids: 339304, 339829
+----------------------------------------------------------------------------------------------
+The main solution to the homework is in the HW_2_3_CLA.matlapp file of the archive.
+It consists in a MATLAB application created with MATLAB's App Designer.
+
+When HW_2_3_CLA.mlapp is run, the GUI pops up. The user interacts with Drop Down objects in order to select the desired parameters of the clusterings, which will be displayed in one or two graphs in the right side of the window. In order to run the code, the green-colored "Clusterize" button must be pressed. 
+
+The first drop down, labeled as "Dataset", allows the user to choose between three datasets: "Circle", "Spiral", and "Iris".
+
+The second, "Clustering", permits to select the clustering technique utilised: "Spectral Clustering", "DBSCAN", "K-means".
+
+The following three drop downs are only enabled if the Clustering Drop Down is set to "Spectral Clustering". In that case, from the first the user can select the value of k to use in the spectral clustering: 10, 20, or 40. k is for the k-nn neighborhood graph.
+The second allows to choose between the use of the Laplacian Matrix or its normalized symmetric counterpart, Lsym, described in the second optional point of the assignment. This will influence the eigenvalue calculation.
+The third provides two choices of calculation of the eigenpairs: either the MATLAB default function (eigs()), or the manual implementation we created using the inverse power method and the deflation technique, as suggested by the third optional point of the homework.
+
+On the right side of the GUI there are two graphs. The one on the top is titled "Clustering results", and it displays the scatter plot of the clustering, showing the dataset points colored based on the clusters they are part of. This graph will show for any run of the code. In case "Iris" is chosen in the first "Dataset" Drop Down, this will be a movable 3-dimensional graph instead of a fixed 2-dimensional graph.
+
+The graph on the bottom is titled "Eigenvalues (Spectral clustering)" and it only appears when "Clustering" is set to "Spectral Clustering". It shows the smallest eigenvalues of the selected Laplacian matrix. 
+
+In the bottom-left part of the GUI, some informations about the current clustering are shown:
+- All of the parameters set by the user.
+- The number of connected components of the knn neighbors similarity graph  (in case of spectral clustering)
+- Adjusted Rand Index value (in case the chosen dataset is Spiral)
+- Average Silhouette Score (in case the chosen dataset is Iris).
+
+Figures from 9 to 14 of the report can be obtained using the GUI we introduced.
+
+-----------------------------------------------------------------------------------------------------------------
+The figures of the report from Figure 1 to Figure 8 are reproducible running the Figures.mat file. 
