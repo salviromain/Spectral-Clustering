@@ -1,10 +1,9 @@
-Instruction file for the Spectral Clustering homework. 
-Student ids: 339304, 339829
+
 ----------------------------------------------------------------------------------------------
-The main solution to the homework is in the HW_2_3_CLA.matlapp file of the archive.
+The main solution to the homework is in the Main_App_Des.mlapp file.
 It consists in a MATLAB application created with MATLAB's App Designer.
 
-When HW_2_3_CLA.mlapp is run, the GUI pops up. The user interacts with Drop Down objects in order to select the desired parameters of the clusterings, which will be displayed in one or two graphs in the right side of the window. In order to run the code, the green-colored "Clusterize" button must be pressed. 
+When Main_App_Des.mlapp is run, the GUI pops up. The user interacts with Drop Down objects in order to select the desired parameters of the clusterings, which will be displayed in one or two graphs in the right side of the window. In order to run the code, the green-colored "Clusterize" button must be pressed. 
 
 The first drop down, labeled as "Dataset", allows the user to choose between three datasets: "Circle", "Spiral", and "Iris".
 
